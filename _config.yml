@@ -1,4 +1,4 @@
-title:            CodeInventory
+title:            ShinFDuran Blog
 description:      "Talk is cheap. Show me the code!"
 logo:             logo.png
 disqus_shortname: codeinventorycom
@@ -11,18 +11,14 @@ url:        	 http://www.shinfduran.com/
 
 # Owner/author information
 owner:
-  name:           Amey Jadiye
-  avatar:         ameyjadiye.jpg
-  email:          ameyjadiye@gmail.com
+  name:           Francisco Durán
+  avatar:         shinfduran.jpg
+  email:          franciscodurannavarro@hotmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    Programming is 1% knowledge, 2% ability and 97% getting the ability to work with the knowledge :)
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        ameyjadiye
-  facebook:       ameyjadiye
-  github:         ameyjadiye    
-  instagram:      ameyjadiye
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:    https://plus.google.com/u/0/+AmeyJadiye
+  twitter:        ShinFDuran
+  github:         shinfduran
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-46791108-1
@@ -43,7 +39,7 @@ links:
     url: /about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Calcutta
+timezone:    Europe/Madrid
 future:      true
 rouge: pygments
 markdown:    kramdown
