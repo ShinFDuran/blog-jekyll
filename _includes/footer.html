@@ -1,57 +1,73 @@
 <footer class="notepad-site-footer">
-    <div class="copyright">
-        <section>All content copyright <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.</section>
-    </div>
-    <div class="social-icons">
-        
-        {% if site.owner.twitter %}
-        <a href="http://twitter.com/{{ site.owner.twitter }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-twitter fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.google_plus %}
-        <a href="{{ site.owner.google_plus }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-google-plus fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.instagram %}
-        <a href="http://instagram.com/{{ site.owner.instagram }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-instagram fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.github %}
-        <a href="http://github.com/{{ site.owner.github }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-github fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %} {% if site.owner.facebook %}
-        <a href="http://facebook.com/{{ site.owner.facebook }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-facebook fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-        {% if site.owner.linkedin %}
-        <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}">
-            <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
-                <i class="fa fa-linkedin fa-stack-1x"></i>
-            </span>
-        </a>
-        {% endif %}
-    </div>
+  <!-- Texto Copyright -->
+  <div class="copyright">
+    All content copyright <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; All rights reserved.
+  </div>
+
+  <!-- Botones sociales.  Se comprueba si existe la propiedad en _config.yml -->
+  <!-- Si existe se genera el botón personalizado en función del valor -->
+  <div class="social-icons">      
+    <!-- Twitter -->
+    {% if site.owner.twitter %}
+    <a href="http://twitter.com/{{ site.owner.twitter }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-twitter fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
     
-    <div class="cf"></div>
+    <!-- Google Plus -->
+    {% if site.owner.google_plus %}
+    <a href="{{ site.owner.google_plus }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-google-plus fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    <!-- Instagram -->
+    {% if site.owner.instagram %}
+    <a href="http://instagram.com/{{ site.owner.instagram }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-instagram fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    <!-- GitHub -->
+    {% if site.owner.github %}
+    <a href="http://github.com/{{ site.owner.github }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-github fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+    
+    <!-- Facebook -->
+    {% if site.owner.facebook %}
+    <a href="http://facebook.com/{{ site.owner.facebook }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-facebook fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+
+    <!-- LinkedIn -->
+    {% if site.owner.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+        <i class="fa fa-linkedin fa-stack-1x"></i>
+      </span>
+    </a>
+    {% endif %}
+  </div>
+  
+  <!-- Fondo final del footer -->
+  <div class="cf"></div>
 </footer>
