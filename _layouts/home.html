@@ -3,76 +3,56 @@
 <head>
 {% include head.html %}
 </head>
+
+<!-- Inicio de página -->
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-<header class="notepad-site-head">
-    <div class="notepad-site-head-menu">
-        <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
-        
-        
-        <div class="notepad-blog-menu">      
-    <div class="notepad-mobile-menu show-for-small">
-        <a href="#"><i class="fa fa-bars"></i></a>
-    </div>
-    <ul class="notepad-menu">
-        <li class="notepad-mobile-close-btn show-for-small text-right">
+  <header class="notepad-site-head">
+    <!-- Navbar -->
+    <nav class="notepad-site-head-menu">
+      <!-- Imagen/Texto -->
+      <a class="notepad-blog-logo" href="{{ site.url }}">
+        <img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" />
+      </a>
+      <div class="notepad-blog-menu">      
+        <div class="notepad-mobile-menu show-for-small">
+          <a href="#"><i class="fa fa-bars"></i></a>
+        </div>
+        <ul class="notepad-menu">
+          <!-- Mobile Button -->
+          <li class="notepad-mobile-close-btn show-for-small text-right">
             <a href="#"><i class="fa fa-times"></i></a>
-        </li>
-{% for link in site.links %}
+          </li>
+          <!-- Lista de secciones -->
+          {% for link in site.links %}
             <li>{% if link.external %}
             <a href="{{ link.url }}">{{ link.title }}</a>
             {% else %}
             <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
             {% endif %} </li>
-{% endfor %}            
-    </ul>
-</div>
-        <div class="clearfix"></div>
-    </div>
+          {% endfor %}            
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Cabecera: Imagen fondo, título y descripción -->
     <div class="notepad-site-head-content" >
-        <div class="notepad-site-head-bg"></div>
-        <h1 class="notepad-blog-title">
-            <span class="notepad-site-head-title-bg">
-                {{ site.title }}
-            </span>
-        </h1>
-        <h2 class="notepad-blog-description">{{ site.description }}</h2>
+      <div class="notepad-site-head-bg"></div>
+      <h1 class="notepad-blog-title">
+        <span class="notepad-site-head-title-bg">{{ site.title }}</span>
+      </h1>
+      <h2 class="notepad-blog-description">{{ site.description }}</h2>
     </div>
-</header>
-<main class="notepad-content" role="main">
+  </header>
 
-<div style="text-align: center;margin-right:auto;margin-left:auto;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- codein1 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7466474470517357"
-     data-ad-slot="6700962438"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+  <!-- Contenido principal -->
+  <main class="notepad-content" role="main">
+    {{ content }}
+  </main>
 
-            {{ content }}
+  <!-- Footer -->
+  {% include footer.html %}
 
-<div style="text-align: center;">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- codein2-footer -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-7466474470517357"
-     data-ad-slot="9952356430"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
-
-
-
-
-
-</main>
-    {% include footer.html %}
-
-{% include scripts.html %}  
+  <!-- Scripts final de página -->
+  {% include scripts.html %}  
 </body>
 </html>

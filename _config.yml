@@ -22,7 +22,7 @@ owner:
   facebook:       francisco.durannavarro
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google_analytics:   UA-73433282-1
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
@@ -31,13 +31,17 @@ bing_verify:
 # For external links add external: true
 links:
   - title: Home
+    external: true
+    url: http://www.shinfduran.com/
+  - title: Blog
     url: /
     external: false
     icon: home
-  - title: Categories
+  - title: Categorias
     url: /categories
-  - title: About
-    url: /about
+  - title: Sobre mi
+    external: true
+    url: http://www.shinfduran.com/#about
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Madrid
